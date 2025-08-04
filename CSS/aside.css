@@ -1,0 +1,169 @@
+.aside-icons {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 10000;
+    color: var(--text-muted);
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -ms-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.aside-icons:hover {
+    color: var(--text-light);
+}
+.aside-icons.close .fa-arrow-right {
+    display: none;
+}
+aside {
+    transform: translateX(-100%);
+    position: fixed;
+    padding: 1.5rem 1.5rem;
+    max-width: 100%;
+    color: var(--text-light);
+    background: linear-gradient(to bottom, var(--primary-dark), var(--dark-bg));
+    width: clamp(250px, 35vw, 350px);
+    height: 100%;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition: transform .7s ease;
+    -webkit-transition: transform .7s ease;
+    -moz-transition: transform .7s ease;
+    -ms-transition: transform .7s ease;
+    -o-transition: transform .7s ease;
+}
+aside > i {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -ms-transition: color .3s ease;
+    -o-transition: color .3s ease;
+}
+aside > i:hover {
+    color: var(--text-light);
+}
+aside .aside-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-block: 2rem;
+}
+aside .aside-header i {
+    font-size: 1rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -ms-transition: color .3s ease;
+    -o-transition: color .3s ease;
+}
+aside .aside-header i:hover {
+    color: var(--text-light);
+}
+aside .aside-body {
+    padding-block: 2rem;
+    margin-block: 2rem;
+    display: grid;
+    gap: 2rem;
+    max-height: 35vh;
+    overflow-y: scroll;
+}
+aside .aside-body section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+aside .aside-body section button {
+    margin-top: 1rem;
+    padding: .7rem 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    font-weight: bold;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+}
+aside .aside-body section button:hover {
+    background-color: var(--text-muted);
+    cursor: pointer;
+}
+aside footer {
+    margin-top: 3cqh;
+}
+aside footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--text-muted);
+    gap: 1rem;
+    font-size: .8rem;
+}
+aside footer nav p {
+    display: block;
+    margin-top: 1rem;
+}
+aside footer nav p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+aside footer button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--text-muted);
+    padding: .7rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    margin-top: 2rem;
+    transition: border .3s ease;
+    -webkit-transition: border .3s ease;
+    -moz-transition: border .3s ease;
+    -ms-transition: border .3s ease;
+    -o-transition: border .3s ease;
+    display: flex;
+    gap: .7rem;
+    font-weight: bold;
+}
+aside footer button:hover {
+    cursor: pointer;
+    border-color: white;
+}
